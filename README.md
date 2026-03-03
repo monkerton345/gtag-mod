@@ -1,22 +1,25 @@
 # Elixir (Gorilla Tag Mod Menu)
 
-This repository contains a simple Gorilla Tag mod menu plugin named **Elixir**.
+Elixir is a Gorilla Tag BepInEx menu designed as a fork-style layout inspired by iidk-like menu structure.
 
-## What it does
+## Features
 
-- Adds an in-game menu titled **ELIXIR**.
-- Uses a **rounded-rectangle** panel style.
-- Includes toggle buttons for example mod actions:
-  - Tag Aura
-  - Speed Boost
-  - Platforms
-  - No Clip
-  - Ghost Monke
+- Rounded rectangle main container and header.
+- Sidebar categories for quick mod grouping.
+- More built-in toggle entries across:
+  - Movement
+  - Player
+  - Visual
+  - Fun
+- Insert key show/hide behavior.
 
-## File
+## Included example mod toggles
 
-- `ElixirMenu.cs` - BepInEx plugin source with immediate-mode Unity GUI menu rendering.
+- Movement: `Speed Boost`, `Long Arms`, `No Clip`, `Platforms`, `Wall Walk`
+- Player: `Tag Aura`, `Auto Tag`, `Anti Tag`, `Ghost Monke`
+- Visual: `Invis Monke`, `ESP`, `Box Chams`, `Tracers`
+- Fun: `Rainbow Hands`, `RGB Body`, `Head Spin`, `Low Gravity`
 
 ## Notes
 
-This is a base menu shell/UI. Hook each toggle into your own Gorilla Tag mod logic as needed.
+This is a UI/menu framework. Wire each toggle into your own Gorilla Tag mod logic and safety checks.
